@@ -19,6 +19,7 @@ public class ProvinceDaoImpl implements ProvinceDao {
         String sql = "select * from province ";
         //2.执行sql
         List<Province> list = template.query(sql, new BeanPropertyRowMapper<Province>(Province.class));
+        System.out.println(1111);
         return list;
     }
 }
